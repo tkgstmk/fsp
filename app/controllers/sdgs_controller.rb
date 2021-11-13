@@ -1,0 +1,2 @@
+class SdgsController < ApplicationController
+end

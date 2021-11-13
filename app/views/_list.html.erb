@@ -11,7 +11,7 @@
       <li class="nav-list"><%= link_to "プロフィール", class:'btn btn-outline-dark' %></li>
       <li class="nav-list"><%= link_to "SDGsについて", class:'btn btn-outline-dark' %></li>
       <li class="nav-list"><%= link_to "プロジェクト",class:'btn btn-outline-dark' %></li>
-      <li class="nav-list"><%= link_to "sign out", destroy_admin_session_path, method: :delete, class:"btn btn-outline-dark" %></li>
+      <li class="nav-list"><%= link_to "sign out", destroy_user_session_path, method: :delete, class:"btn btn-outline-dark" %></li>
     <% else %>
       <li class="nav-list"><%= link_to "sign up", new_user_registration_path, class:"btn btn-outline-dark" %></li>
       <li class="nav-list"><%= link_to "sign in", new_user_session_path, class:"btn btn-outline-dark" %></li>
@@ -20,7 +20,7 @@
   </div>
 </nav>
 
-<body style="background-color:#000000;"></body>
+<body style="background-color:#000000; text-color:color:white;"></body>
 
 <footer>
   <div class="h-50000"></div>

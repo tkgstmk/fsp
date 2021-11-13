@@ -1,0 +1,22 @@
+<%= render :partial => "/list" %>
+<h4 style="color:white" class="pt-3 pb-5 pl-5"><%#= @user.name%>さんの“好き”一覧</h4>
+<div  style="color:white" class="pl-15">
+  <%#= @user.favorite %>
+</div>
+<p style="color:white" class="pl-2"><b>「貧困」って何だろう？</b><br>
+地球上には，貧困に苦しむ人が多くいます。<br>豊ゆたかな日本で暮くらしていると、なかなかイメージがしにくいかもしれません。<br>そもそも「貧困」とはなんでしょう。</p>
+<div class="container pt-5">
+  <div class="row">
+    <div class="col-3">
+      <%= image_tag 'goal1.jpeg', size: "200x200" %>
+    </div>
+    <div class="col-9">
+      <p style="color:white">●︎ 世界中のあらゆる貧困を終わらせる</p>
+      <p style="color:white">● ︎貧困で暮くらす人の自立をサポートする</p>
+    </div>
+  </div>
+</div>d
+
+<div class="actions pt-4 px-3", style="text-align:center;">
+  <%= link_to "戻る", new_favorite_path, class:'btn btn-danger' %>
+</div>
