@@ -14,13 +14,23 @@
 ### 主な利用シーン
 - 学校教育家研修などの活動の導入
 
+### 機能一覧
+- 会員登録、ログイン・ログアウト、退会ができます。
+- 会員のログインはメールアドレスとパスワードで行えます。
+- 会員がログインしている状態かどうか、ページのヘッダーにユーザ名を表示するなどして判断できます。
+- ログイン後に自身の好きなものなどを書き出すことができます。（変更可能）
+- プロジェクトの追加、編集
+- SDGs17の目標
+- カウントダウン機能
+- headerにハンバーガーメニュー
+
 - OS：Linux(CentOS)
 - 言語：HTML,CSS,JavaScript,Ruby,SQL
 - JSライブラリ：jQuery
 - IDE：Cloud9
 
-### 設計書：https://docs.google.com/spreadsheets/d/1Rh8hvQRUKyyhBgWyOLXqtjWz4BvXT4bf/edit?usp=sharing&ouid=103167803846542152266&rtpof=true&sd=true
-### チャレンジ要素一覧：https://docs.google.com/spreadsheets/d/1Or1z70yKtIdcaBUyjlcqyovv24QO9sG-iPWvTNA9b-8/edit?usp=sharing
-### テーブル定義書：https://docs.google.com/spreadsheets/d/1451yj8UF39yUqy074o_bEFEq9UrNFnFStogCYaYwreM/edit?usp=sharing
-### ER図：https://drive.google.com/file/d/1DaovAu6Mnx5QwoCN5Dht25t_idXnky_U/view?usp=sharing
-### イメージ：https://drive.google.com/file/d/1gLFbqHAdYpCLOhHG3nJM6GMEzMGvuils/view?usp=sharing
+- 設計書：https://docs.google.com/spreadsheets/d/1Rh8hvQRUKyyhBgWyOLXqtjWz4BvXT4bf/edit?usp=sharing&ouid=103167803846542152266&rtpof=true&sd=true
+- チャレンジ要素一覧：https://docs.google.com/spreadsheets/d/1Or1z70yKtIdcaBUyjlcqyovv24QO9sG-iPWvTNA9b-8/edit?usp=sharing
+- テーブル定義書：https://docs.google.com/spreadsheets/d/1451yj8UF39yUqy074o_bEFEq9UrNFnFStogCYaYwreM/edit?usp=sharing
+- ER図：https://drive.google.com/file/d/1DaovAu6Mnx5QwoCN5Dht25t_idXnky_U/view?usp=sharing
+- イメージ：https://drive.google.com/file/d/1gLFbqHAdYpCLOhHG3nJM6GMEzMGvuils/view?usp=sharing
