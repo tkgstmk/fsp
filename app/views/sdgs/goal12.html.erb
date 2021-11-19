@@ -1,9 +1,17 @@
 <%= render :partial => "/list" %>
-<h4 style="color:white" class="pt-3 pb-5 pl-5"><%#= @user.name%>さんの“好き”一覧</h4>
-<div  style="color:white" class="pl-15">
-  <%#= @user.favorite %>
-</div>
-<p style="color:white" class="pl-2"><b>未来をつくる教育</b><br>
+<div class="container">
+  
+  <!--<div class="row">-->
+    <h4 style="color:white" class="pt-3 pl-5"><%= @user.name%>さんの“好き”一覧</h4>
+    <!--</div>-->
+    <div class="row">
+      <div class="pt-4 px-3 pb-4" style="background-color: #808080; width: 100%;" >
+        <div style="color:white"><%= @user.favorite %></div>
+      </div>
+    </div>
+    
+    
+<p style="color:white" class="pl-2 pt-5"><b>未来をつくる教育</b><br>
 日本では小学校・中学校の９年間が義ぎ務む教育で、すべての子どもたちが教育を受ける権利を持っています。<br>
 しかし，世界には学校に通えない子どもたちが約1.2億人もいます。<br>
 小学校に入学する歳になっても学校に通っていない子どもたちの約半分は，紛争や戦争のある場所に暮らしています。。</p>

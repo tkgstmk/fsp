@@ -2,7 +2,8 @@ Rails.application.routes.draw do
   devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root to: 'homes#top'
-  resources :favorites, only: [:new]
+  resources :favorites, only: [:index, :new, :update]
+  resources :sdgs, only: [:index]
   get '/sdgs/goal1' => 'sdgs#goal1', as: 'goal1'
   get '/sdgs/goal2' => 'sdgs#goal2', as: 'goal2'
   get '/sdgs/goal3' => 'sdgs#goal3', as: 'goal3'

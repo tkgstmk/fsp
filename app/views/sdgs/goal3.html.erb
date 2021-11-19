@@ -1,9 +1,16 @@
 <%= render :partial => "/list" %>
-<h4 style="color:white" class="pt-3 pb-5 pl-5"><%#= @user.name%>さんの“好き”一覧</h4>
-<div  style="color:white" class="pl-15">
-  <%#= @user.favorite %>
-</div>
-<p style="color:white" class="pl-2"><b>健康に生きるために</b><br>
+<div class="container">
+  
+  <!--<div class="row">-->
+    <h4 style="color:white" class="pt-3 pl-5"><%= @user.name%>さんの“好き”一覧</h4>
+    <!--</div>-->
+    <div class="row">
+      <div class="pt-4 px-3 pb-4" style="background-color: #808080; width: 100%;" >
+        <div style="color:white"><%= @user.favorite %></div>
+      </div>
+    </div>
+    
+<p style="color:white" class="pl-2 pt-5"><b>健康に生きるために</b><br>
 先進国であればすぐに治療できる病気でも、抵抗の低い子どもにとっては命を失う原因になります。<br>
 途上国の赤ちゃんや小さな子どもたちが亡くなる原因として多いのは、肺炎や下痢です。<br>
 予防接種が行き届かず、十分な治療が受けられないことで、多くの子どもたちが命を落としています。</p>
@@ -20,5 +27,5 @@
 </div>
 
 <div class="actions pt-4 px-3", style="text-align:center;">
-  <%= link_to "戻る", new_favorite_path, class:'btn btn-danger' %>
+  <%= link_to "戻る", sdgs_path, class:'btn btn-danger' %>
 </div>

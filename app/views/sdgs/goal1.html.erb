@@ -1,9 +1,16 @@
 <%= render :partial => "/list" %>
-<h4 style="color:white" class="pt-3 pb-5 pl-5"><%#= @user.name%>さんの“好き”一覧</h4>
-<div  style="color:white" class="pl-15">
-  <%#= @user.favorite %>
-</div>
-<p style="color:white" class="pl-2"><b>「貧困」って何だろう？</b><br>
+<div class="container">
+  
+  <!--<div class="row">-->
+    <h4 style="color:white" class="pt-3 pl-5"><%= @user.name%>さんの“好き”一覧</h4>
+    <!--</div>-->
+    <div class="row">
+      <div class="pt-4 px-3 pb-4" style="background-color: #808080; width: 100%;" >
+        <div style="color:white"><%= @user.favorite %></div>
+      </div>
+    </div>
+    
+<p style="color:white" class="pl-2 pt-5"><b>「貧困」って何だろう？</b><br>
 地球上には，貧困に苦しむ人が多くいます。<br>豊ゆたかな日本で暮くらしていると、なかなかイメージがしにくいかもしれません。<br>そもそも「貧困」とはなんでしょう。</p>
 <div class="container pt-5">
   <div class="row">
@@ -18,5 +25,5 @@
 </div>d
 
 <div class="actions pt-4 px-3", style="text-align:center;">
-  <%= link_to "戻る", new_favorite_path, class:'btn btn-danger' %>
+  <%= link_to "戻る", sdgs_path, class:'btn btn-danger' %>
 </div>

@@ -1,0 +1,29 @@
+<%= render :partial => "/list" %>
+<div class="container">
+  
+  <!--<div class="row">-->
+    <h4 style="color:white" class="pt-3 pl-5"><%= @user.name%>さんの“好き”一覧</h4>
+    <!--</div>-->
+    <div class="row">
+      <div class="pt-4 px-3 pb-4" style="background-color: #808080; width: 100%;" >
+        <div style="color:white"><%= @user.favorite %></div>
+      </div>
+    </div>
+  
+  <div class="row", style="text-align:center;">
+    <div class="pt-5">
+    <p style="color:white">
+      <%= @user.name%>さんの“好き”を書き出してもらいました。<br>
+      これを使って、身近から世界を変えるプロジェクトにチャレンジしましょう！<br>
+      <%= @user.name%>さんに問題です。<br>
+      ずっと気になっていたかと思いますが、左上に表示されている数字は何を表していると思いますか？<br>
+      正解は「SDGs達成までのタイムリミット」です。
+    </p>
+    </div>
+  </div>
+  
+  <div class="row", style="text-align:center;">
+    <div class="pr-2"><%= link_to "戻る", new_favorite_path, class:'btn btn-danger' %></div>
+    <%= link_to "SDGsとは", sdgs_path, class:'btn btn-danger' %>
+  </div>
+</div>

@@ -1,0 +1,55 @@
+<%= render :partial => "/list" %>
+<div class="container">
+  
+  <!--<div class="row">-->
+    <h4 style="color:white" class="pt-3 pl-5"><%= @user.name%>さんの“好き”一覧</h4>
+    <!--</div>-->
+    <div class="row">
+      <div class="pt-4 px-3 pb-4" style="background-color: #808080; width: 100%;" >
+        <div style="color:white"><%= @user.favorite %></div>
+      </div>
+    </div>
+  
+  
+  <div class="row">
+    <div class="pt-5" style="color:white">
+    <p>SDGs（Sustainable Development Goals：持続可能な開発目標）とは、「誰一人取り残さない」持続可能でより良い社会実現を目指す世界共通の目標です。この目標は国連サミットで全加盟国が合意し、2030年までの達成を目指しています。構成は17の目標と169のターゲットからできていて、これからの社会・経済・環境を総合的に解決でき、持続可能なよりよい未来を築くことを目指しています。</p>
+    </div>
+  </div>
+  
+  <div class="row">
+    <p style="color:red">17の目標</p>
+  </div>
+  <div class="row">
+    <div class="col-2 mt-2"><%= link_to goal1_path do %><%= image_tag 'goal1.jpeg', size: "75x75" %><% end %></div>
+    <div class="col-2 mt-2"><%= link_to goal2_path do %><%= image_tag 'goal2.jpeg', size: "75x75" %><% end %></div>
+    <div class="col-2 mt-2"><%= link_to goal3_path do %><%= image_tag 'goal3.jpeg', size: "75x75" %><% end %></div>
+    <div class="col-2 mt-2"><%= link_to goal4_path do %><%= image_tag 'goal4.jpeg', size: "75x75" %><% end %></div>
+    <div class="col-2 mt-2"><%= link_to goal5_path do %><%= image_tag 'goal5.jpeg', size: "75x75" %><% end %></div>
+    <div class="col-2 mt-2"><%= link_to goal6_path do %><%= image_tag 'goal6.jpeg', size: "75x75" %><% end %></div>
+    <div class="col-2 mt-2"><%= link_to goal7_path do %><%= image_tag 'goal7.jpeg', size: "75x75" %><% end %></div>
+    <div class="col-2 mt-2"><%= link_to goal8_path do %><%= image_tag 'goal8.jpeg', size: "75x75" %><% end %></div>
+    <div class="col-2 mt-2"><%= link_to goal9_path do %><%= image_tag 'goal9.jpeg', size: "75x75" %><% end %></div>
+    <div class="col-2 mt-2"><%= link_to goal10_path do %><%= image_tag 'goal10.jpeg', size: "75x75" %><% end %></div>
+    <div class="col-2 mt-2"><%= link_to goal11_path do %><%= image_tag 'goal1.jpeg', size: "75x75" %><% end %></div>
+    <div class="col-2 mt-2"><%= link_to goal12_path do %><%= image_tag 'goal12.png', size: "75x75" %><% end %></div>
+    <div class="col-2 mt-2"><%= link_to goal13_path do %><%= image_tag 'goal13.jpeg', size: "75x75" %><% end %></div>
+    <div class="col-2 mt-2"><%= link_to goal14_path do %><%= image_tag 'goal14.jpeg', size: "75x75" %><% end %></div>
+    <div class="col-2 mt-2"><%= link_to goal15_path do %><%= image_tag 'goal15.jpeg', size: "75x75" %><% end %></div>
+    <div class="col-2 mt-2"><%= link_to goal16_path do %><%= image_tag 'goal16.jpeg', size: "75x75" %><% end %></div>
+    <div class="col-2 mt-2"><%= link_to goal17_path do %><%= image_tag 'goal17.jpeg', size: "75x75" %><% end %></div>
+    <div class="col-2 mt-2 mb-8"><%= image_tag 'sdgs-logo.jpeg', size: "75x75" %></div>
+  </div>
+  
+  
+  <div class="row">
+    <p style="color:white">世界共通の目標にどんな印象を持ちましたか？<br>
+    世界共通の目標というとなんだか壮大な感じがしますね。けれども、自分の”好き”を掛け合わせるとなると、難しどうだけど少しワクワクしませんか？１人１人の小さな行動の積み重ねから世界を変えていきましょう！</p>
+  </div>
+  
+  <div class="row">
+    <%= link_to "戻る", favorites_path, class:'btn btn-danger' %>
+    <%= link_to "チャレンジ！", class:'btn btn-danger' %>
+  </div>
+  
+</div>
