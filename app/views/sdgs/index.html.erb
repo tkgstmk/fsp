@@ -31,7 +31,7 @@
     <div class="col-2 mt-2"><%= link_to goal8_path do %><%= image_tag 'goal8.jpeg', size: "75x75" %><% end %></div>
     <div class="col-2 mt-2"><%= link_to goal9_path do %><%= image_tag 'goal9.jpeg', size: "75x75" %><% end %></div>
     <div class="col-2 mt-2"><%= link_to goal10_path do %><%= image_tag 'goal10.jpeg', size: "75x75" %><% end %></div>
-    <div class="col-2 mt-2"><%= link_to goal11_path do %><%= image_tag 'goal1.jpeg', size: "75x75" %><% end %></div>
+    <div class="col-2 mt-2"><%= link_to goal11_path do %><%= image_tag 'goal11.jpeg', size: "75x75" %><% end %></div>
     <div class="col-2 mt-2"><%= link_to goal12_path do %><%= image_tag 'goal12.png', size: "75x75" %><% end %></div>
     <div class="col-2 mt-2"><%= link_to goal13_path do %><%= image_tag 'goal13.jpeg', size: "75x75" %><% end %></div>
     <div class="col-2 mt-2"><%= link_to goal14_path do %><%= image_tag 'goal14.jpeg', size: "75x75" %><% end %></div>
@@ -42,14 +42,16 @@
   </div>
   
   
-  <div class="row">
+  <div class="row mt-5">
     <p style="color:white">世界共通の目標にどんな印象を持ちましたか？<br>
     世界共通の目標というとなんだか壮大な感じがしますね。けれども、自分の”好き”を掛け合わせるとなると、難しどうだけど少しワクワクしませんか？１人１人の小さな行動の積み重ねから世界を変えていきましょう！</p>
   </div>
   
   <div class="row">
-    <%= link_to "戻る", favorites_path, class:'btn btn-danger' %>
-    <%= link_to "チャレンジ！", class:'btn btn-danger' %>
+    <div class="pr-2">
+      <%= link_to "戻る", favorites_path, class:'btn btn-danger' %>
+    </div>
+    <%= link_to "チャレンジ！", new_project_path, class:'btn btn-danger' %>
   </div>
   
 </div>

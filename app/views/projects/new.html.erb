@@ -1,0 +1,45 @@
+<%= render :partial => "/list" %>
+<div class="container">
+  <p style="color:white" class="pt-3 pl-5"><%= @user.name%>さんの“好き”一覧</p>
+    <div class="row">
+      <div class="pt-4 px-3 pb-4" style="background-color: #808080; width: 100%;" >
+        <div style="color:white"><%= @user.favorite %></div>
+      </div>
+    </div>
+    
+    <%= form_with model: @project, url: projects_path, local: true do |f| %>
+    <%#= form_with model: @user, url: favorite_path(@user), local: true do |f| %>
+    <p style="color:white" class="pt-3 pl-5">プロジェクト</p>
+    <div class="row">
+      <p>取り組んでみたいSDGsの目標をチェックしよう！</p>
+        <% 配列.each.with_index do |配列の要素,i| %>
+          <label>
+            <%= check_box_tag '["選択値1", "選択値2", "選択値3"]', 配列の要素,false,id:"id_contents_#{i}"%>
+            <%= ラベル名 %>
+          </label>
+        <% end %>
+        
+        1
+
+
+
+      <%= check_box_tag :sample %>
+      <%= label_tag :sample, 'チェックボックス' %>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+  
+  <div class="row">
+    <div class="mt-3", style="text-align:center;">
+      <%#= f.submit "登録", class:'btn btn-danger' %>
+    </div>
+  </div>
+  <% end %>
+</div>
